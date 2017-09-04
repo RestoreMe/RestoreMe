@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="247.0" style="-fx-background-color: #555555;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIController">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="250.0" style="-fx-background-color: #555555;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIController">
    <children>
       <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="186.0">
          <children>
@@ -43,7 +43,7 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#333333" height="5.0" layoutX="-16.0" stroke="TRANSPARENT" strokeType="INSIDE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
          </children>
       </AnchorPane>
-      <VBox alignment="CENTER" spacing="5.0">
+      <VBox alignment="CENTER" spacing="10.0">
          <children>
             <AnchorPane prefHeight="64.0" prefWidth="186.0">
                <children>
@@ -142,6 +142,9 @@
                </children>
             </AnchorPane>
          </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
       </VBox>
    </children>
 </VBox>
