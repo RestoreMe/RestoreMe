@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="247.0" style="-fx-background-color: #555555;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="186.0">
+         <children>
+            <AnchorPane prefHeight="79.0" prefWidth="122.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="84.0" prefWidth="122.0" text="RestoreMe!" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="59.0" prefWidth="74.0">
+               <children>
+                  <ImageView fitHeight="86.0" fitWidth="44.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="33.80588150024414" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="33.0">
+                     <image>
+                        <Image url="@img/Logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <AnchorPane prefHeight="5.0" style="-fx-background-color: #454545;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#333333" height="5.0" layoutX="-16.0" stroke="TRANSPARENT" strokeType="INSIDE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <VBox alignment="CENTER" spacing="5.0">
+         <children>
+            <AnchorPane prefHeight="64.0" prefWidth="186.0">
+               <children>
+                  <JFXButton fx:id="profileTab" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#aaaaaa" style="-fx-background-radius: 0;" text="Profile" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/Profiles.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="64.0" prefWidth="186.0">
+               <children>
+                  <JFXButton fx:id="backupTab" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#aaaaaa" style="-fx-background-radius: 0;" text="Backup" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/Backup.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="64.0" prefWidth="186.0">
+               <children>
+                  <JFXButton fx:id="restoreTab" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#aaaaaa" style="-fx-background-radius: 0;" text="Restore" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/Restore.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="64.0" prefWidth="186.0">
+               <children>
+                  <JFXButton fx:id="filesDestinationsTab" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#aaaaaa" style="-fx-background-radius: 0;" text="Files/Destinations" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/Files%20Destinations.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="64.0" prefWidth="186.0">
+               <children>
+                  <JFXButton fx:id="historyTab" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#aaaaaa" style="-fx-background-radius: 0;" text="History" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/History.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="64.0" prefWidth="186.0">
+               <children>
+                  <JFXButton fx:id="settingsTab" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#aaaaaa" style="-fx-background-radius: 0;" text="Settings" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/Setiings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</VBox>
