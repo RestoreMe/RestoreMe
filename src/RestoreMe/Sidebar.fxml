@@ -7,44 +7,37 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="280.0" style="-fx-background-color: #555555;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIController">
    <children>
-      <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="186.0">
+      <AnchorPane prefHeight="85.0" prefWidth="280.0">
          <children>
-            <AnchorPane prefHeight="100.0" prefWidth="136.0">
-               <children>
-                  <Label alignment="CENTER" prefHeight="84.0" prefWidth="122.0" text="RestoreMe!" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="59.0" prefWidth="74.0">
-               <children>
-                  <ImageView fitHeight="86.0" fitWidth="44.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="33.80588150024414" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="33.0">
+            <Label alignment="BASELINE_LEFT" contentDisplay="RIGHT" graphicTextGap="10.0" prefHeight="84.0" prefWidth="122.0" text="RestoreMe!" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@img/Logo.png" />
                      </image>
                   </ImageView>
-               </children>
-            </AnchorPane>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
          </children>
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-      </HBox>
+      </AnchorPane>
       <AnchorPane prefHeight="5.0" style="-fx-background-color: #454545;">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#333333" height="5.0" layoutX="-16.0" stroke="TRANSPARENT" strokeType="INSIDE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
          </children>
       </AnchorPane>
-      <VBox alignment="CENTER" spacing="10.0">
+      <VBox alignment="CENTER">
          <children>
             <AnchorPane prefHeight="64.0" prefWidth="186.0">
                <children>
