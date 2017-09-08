@@ -37,14 +37,14 @@ public class GUIController implements Initializable{
     void windowSwitch(ActionEvent event) {
     	JFXButton btn = (JFXButton) event.getSource();
     	BorderPane root = (BorderPane) btn.getScene().getRoot();
-    	switch(btn.getId()) {
-    		case "profileTab": root.setCenter(profilePane); break;
-    		case "backupTab": root.setCenter(backupPane); break;
-    		case "restoreTab": root.setCenter(restorePane); break;
-    		case "filesDestinationsTab": root.setCenter(filesDestinationsPane); break;
-    		case "historyTab": root.setCenter(historyPane); break;
-    		case "settingsTab": root.setCenter(settingsPane); break;
-    		default: root.setCenter(backupPane); break;
+	    switch(btn.getId()) {
+	    	case "profileTab": root.setCenter(profilePane); break;
+	    	case "backupTab": root.setCenter(backupPane); break;
+	    	case "restoreTab": root.setCenter(restorePane); break;
+	    	case "filesDestinationsTab": root.setCenter(filesDestinationsPane); break;
+	    	case "historyTab": root.setCenter(historyPane); break;
+	    	case "settingsTab": root.setCenter(settingsPane); break;
+	    	default: root.setCenter(backupPane); break;
     	}
     	
     }
@@ -57,13 +57,13 @@ public class GUIController implements Initializable{
     private final AnchorPane historyPane;
     private final AnchorPane settingsPane;
     
-	public GUIController () throws IOException {
-		profilePane = FXMLLoader.load(getClass().getResource(fxmlFolder + "Profile.fxml"));
-		backupPane = FXMLLoader.load(getClass().getResource(fxmlFolder + "Backup.fxml"));
-		restorePane = FXMLLoader.load(getClass().getResource(fxmlFolder + "Restore.fxml"));
-		filesDestinationsPane = FXMLLoader.load(getClass().getResource(fxmlFolder + "FilesDestinations.fxml"));
-		historyPane = FXMLLoader.load(getClass().getResource(fxmlFolder + "History.fxml"));
-		settingsPane = FXMLLoader.load(getClass().getResource(fxmlFolder + "Settings.fxml"));
+	public GUIController () throws IOException{
+		profilePane = (AnchorPane)((BorderPane)FXMLLoader.load(getClass().getResource(fxmlFolder + "Profile.fxml"))).getCenter();
+		backupPane = (AnchorPane)((BorderPane)FXMLLoader.load(getClass().getResource(fxmlFolder + "Backup.fxml"))).getCenter();
+		restorePane = (AnchorPane)((BorderPane)FXMLLoader.load(getClass().getResource(fxmlFolder + "Restore.fxml"))).getCenter();
+		filesDestinationsPane = (AnchorPane)((BorderPane)FXMLLoader.load(getClass().getResource(fxmlFolder + "FilesDestinations.fxml"))).getCenter();
+		historyPane = (AnchorPane)((BorderPane)FXMLLoader.load(getClass().getResource(fxmlFolder + "History.fxml"))).getCenter();
+		settingsPane = (AnchorPane)((BorderPane)FXMLLoader.load(getClass().getResource(fxmlFolder + "Settings.fxml"))).getCenter();
 	}
 
 	@Override
