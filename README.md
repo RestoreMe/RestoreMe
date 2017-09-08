@@ -1,2 +1,2 @@
 RestoreMe
-This is a Java based file backup utility.
+This is a Java based file backup utility application.
