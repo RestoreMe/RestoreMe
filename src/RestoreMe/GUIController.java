@@ -1,4 +1,4 @@
-package RestoreMe;
+package restoreMe;
 
 import java.io.IOException;
 import java.net.URL;
@@ -49,7 +49,7 @@ public class GUIController implements Initializable{
     	
     }
     
-    private final String fxmlFolder = "/RestoreMe/fxml/";
+    private final String fxmlFolder = "/restoreMe/fxml/";
     private final AnchorPane profilePane;
     private final AnchorPane backupPane;
     private final AnchorPane restorePane;
