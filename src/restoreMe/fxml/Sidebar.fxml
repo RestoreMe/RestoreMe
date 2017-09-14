@@ -47,7 +47,7 @@
                      <children>
                         <AnchorPane prefHeight="80.0" prefWidth="255.0">
                            <children>
-                              <JFXButton fx:id="profileTab" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#aaaaaa" style="-fx-background-radius: 0;" text="Profile" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <JFXButton fx:id="profileTab" accessibleText="Profile" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#444444" style="-fx-background-radius: 0;" text="Profile" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
@@ -59,7 +59,7 @@
                         </AnchorPane>
                         <AnchorPane prefHeight="80.0" prefWidth="186.0">
                            <children>
-                              <JFXButton fx:id="backupTab" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#aaaaaa" style="-fx-background-radius: 0;" text="Backup" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <JFXButton fx:id="backupTab" accessibleText="Backup" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#444444" style="-fx-background-radius: 0;" text="Backup" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
@@ -71,7 +71,7 @@
                         </AnchorPane>
                         <AnchorPane prefHeight="80.0" prefWidth="186.0">
                            <children>
-                              <JFXButton fx:id="restoreTab" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#aaaaaa" style="-fx-background-radius: 0;" text="Restore" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <JFXButton fx:id="restoreTab" accessibleText="Restore" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#444444" style="-fx-background-radius: 0;" text="Restore" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
@@ -83,7 +83,7 @@
                         </AnchorPane>
                         <AnchorPane prefHeight="80.0" prefWidth="186.0">
                            <children>
-                              <JFXButton fx:id="filesDestinationsTab" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#aaaaaa" style="-fx-background-radius: 0;" text="Files/Destinations" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <JFXButton fx:id="filesDestinationsTab" accessibleText="Files and Destinations" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#444444" style="-fx-background-radius: 0;" text="Files/Destinations" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
@@ -95,7 +95,7 @@
                         </AnchorPane>
                         <AnchorPane prefHeight="80.0" prefWidth="186.0">
                            <children>
-                              <JFXButton fx:id="historyTab" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#aaaaaa" style="-fx-background-radius: 0;" text="History" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <JFXButton fx:id="historyTab" accessibleText="History" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#444444" style="-fx-background-radius: 0;" text="History" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
@@ -107,7 +107,7 @@
                         </AnchorPane>
                         <AnchorPane prefHeight="80.0" prefWidth="186.0">
                            <children>
-                              <JFXButton fx:id="settingsTab" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#aaaaaa" style="-fx-background-radius: 0;" text="Settings" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <JFXButton fx:id="settingsTab" accessibleText="Settings" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#444444" style="-fx-background-radius: 0;" text="Settings" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
