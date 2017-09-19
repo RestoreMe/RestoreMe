@@ -1,4 +1,40 @@
-/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
 #selected {
 	-fx-background-color: #444444;
+}
+
+.jfx-tab-pane .tab-header-area .jfx-rippler{
+    -jfx-rippler-fill: #e07e3e;
+}
+
+.jfx-tab-pane .tab-selected-line {
+    -fx-background-color: #e07e3e;
+}
+
+.jfx-tab-pane .tab-header-background
+{
+	-fx-background-color: #444444;
+}
+
+.jfx-tab-pane .text-color{
+	-fx-fill: RED;
+}
+
+.jfx-tab-pane .tab:selected {
+	 -fx-background-color: #555555;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #dddddd;
+    -fx-font-size: 25px;
+    -fx-font-weight: normal;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #e07e3e;
+}
+
+.jfx-tree-view {
+	-fx-background-color: #555555;
 }
