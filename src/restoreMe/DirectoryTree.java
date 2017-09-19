@@ -1,8 +1,8 @@
 package restoreMe;
 
-public class DriveTree {
+public class DirectoryTree {
 
-	public DriveTree() {
+	public DirectoryTree() {
 		// TODO Auto-generated constructor stub
 	}
 
