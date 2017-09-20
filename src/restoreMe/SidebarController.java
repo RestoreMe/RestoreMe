@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXTreeView;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -13,7 +14,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 
-public class GUIController implements Initializable{
+public class SidebarController implements Initializable{
 	
 	@FXML
     private JFXButton profileTab;
@@ -32,7 +33,7 @@ public class GUIController implements Initializable{
 
     @FXML
     private JFXButton settingsTab;
-
+    
     @FXML
     void windowSwitch(ActionEvent event) {
     	JFXButton btn = (JFXButton) event.getSource();
@@ -59,7 +60,7 @@ public class GUIController implements Initializable{
     private final AnchorPane historyPane;
     private final AnchorPane settingsPane;
     
-	public GUIController () throws IOException{
+	public SidebarController () throws IOException{
 		profilePane = (AnchorPane)((BorderPane)FXMLLoader.load(getClass().getResource(fxmlFolder + "Profile.fxml"))).getCenter();
 		backupPane = (AnchorPane)((BorderPane)FXMLLoader.load(getClass().getResource(fxmlFolder + "Backup.fxml"))).getCenter();
 		restorePane = (AnchorPane)((BorderPane)FXMLLoader.load(getClass().getResource(fxmlFolder + "Restore.fxml"))).getCenter();
