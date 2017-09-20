@@ -35,6 +35,17 @@
     -fx-text-fill: #e07e3e;
 }
 
-.jfx-tree-view {
+.tree-view {
 	-fx-background-color: #555555;
+}
+
+.tree-cell {
+	-fx-background-color: #555555;
+}
+
+.jfx-check-box{
+	-fx-text-fill: #dddddd;
+	-fx-font-size: 10pt;
+    -jfx-checked-color: #dddddd;
+    -jfx-unchecked-color: GREY;
 }
