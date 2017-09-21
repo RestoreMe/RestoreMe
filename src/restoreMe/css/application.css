@@ -46,6 +46,6 @@
 .jfx-check-box{
 	-fx-text-fill: #dddddd;
 	-fx-font-size: 10pt;
-    -jfx-checked-color: #dddddd;
-    -jfx-unchecked-color: GREY;
+    -jfx-checked-color: #e07e3e;
+    -jfx-unchecked-color: #dddddd;
 }
