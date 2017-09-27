@@ -16,6 +16,9 @@ public class FileTreeItem extends JFXCheckBox {
 	private MaterialDesignIconView icon = new MaterialDesignIconView();
 	private boolean isDirectory;
 	
+	public FileTreeItem() {
+		super ("Hidden Root");
+	}
 	
 	public FileTreeItem(Path path) {
 		setPath(path);

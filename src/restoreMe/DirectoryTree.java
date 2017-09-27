@@ -13,29 +13,21 @@ import javafx.scene.image.ImageView;
 public class DirectoryTree {
 
 	private ArrayList<Path> roots;
-	private JFXTreeView<JFXCheckBox> tree;
+	private ArrayList<Path> openPaths;
+	private JFXTreeView<FileTreeItem> tree;
+	private TreeItem<FileTreeItem> treeRoot = new TreeItem<FileTreeItem>();
 	
-	public DirectoryTree(ArrayList<Path> roots, JFXTreeView<JFXCheckBox> tree) {
+	public DirectoryTree(ArrayList<Path> roots, ArrayList<Path> openPaths, JFXTreeView<FileTreeItem> tree) {
 		this.roots = roots;
+		this.openPaths = openPaths;
 		this.tree = tree;
 		
+		this.tree.setRoot(treeRoot);
 		tree.setShowRoot(false);
 		
-		/*checkBox.setIndeterminate(true);
-		
-		Path q = Paths.get("C\\a");
-		ImageView z = new ImageView("/application/Logo.png");
-		z.setPreserveRatio(true);
-		z.setFitWidth(30);
-		TreeItem<Path> root = new TreeItem<Path>(q);
-		System.out.println(root);
-		
-		TreeItem<Path> a = new TreeItem<Path>(q);
-		TreeItem<Path> b = new TreeItem<Path>();
-		a.setGraphic(z);
-		root.getChildren().add(a);
-		root.getChildren().add(b);
-		treeView.setRoot(root);*/
+		for(Path root:roots) {
+			treeRoot.getChildren().add(new TreeItem<FileTreeItem>(new FileTreeItem(root)));
+		}
 	}
 	
 	public void addTreeItem() {
