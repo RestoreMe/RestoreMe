@@ -39,8 +39,26 @@
 	-fx-background-color: #555555;
 }
 
+.tree-view .jfx-rippler {
+	-jfx-rippler-fill: #e07e3e;
+}
+
 .tree-cell {
 	-fx-background-color: #555555;
+}
+
+.tree-cell > .tree-disclosure-node > .arrow  {
+    -fx-background-color: #dddddd;
+}
+
+
+.tree-cell:expanded > .tree-disclosure-node > .arrow {
+    -fx-background-color: #e07e3e;
+}
+
+.tree-cell:selected {
+	-fx-background-color: #444444;
+	
 }
 
 .jfx-check-box{
@@ -48,4 +66,22 @@
 	-fx-font-size: 10pt;
     -jfx-checked-color: #e07e3e;
     -jfx-unchecked-color: #dddddd;
+}
+
+.scroll-bar .track,
+.scroll-bar .track-background,
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button{
+	-fx-background-color: #555555;
+}
+
+.scroll-bar .increment-arrow, 
+.scroll-bar .decrement-arrow {
+    -fx-padding: 0;	
+}
+
+.scroll-bar .thumb {
+	-fx-background-color: #e07e3e;
+	-fx-background-radius: 1px;
+	-fx-padding: 2px;
 }
