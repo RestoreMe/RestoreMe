@@ -28,7 +28,7 @@ public class FilesDestinationsController implements Initializable {
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		//DirectoryTree backupFiles = new DirectoryTree(roots, openPaths, backupFilesTreeView);
+		DirectoryTree backupFiles = new DirectoryTree(roots, openPaths, backupFilesTreeView);
 	}
 
 }

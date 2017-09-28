@@ -40,8 +40,14 @@ public class FileTreeItem extends JFXCheckBox {
 	public void setPath(Path path) {
 		this.path = path;
 		isDirectory = this.path.toFile().isDirectory();
-		setIcon();
-		setText(path.getFileName().toString());
+		if(path.getFileName() != null) {
+			setIcon();
+			setText(path.getFileName().toString());
+		}
+		else {
+			setText(path.toString());
+			icon.setText("");
+		}
 	}
 	
 	public boolean isDirectory() {
