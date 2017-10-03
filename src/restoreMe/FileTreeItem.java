@@ -5,10 +5,6 @@ import java.nio.file.Path;
 import com.jfoenix.controls.JFXCheckBox;
 
 import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView;
-import javafx.geometry.Pos;
-import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.HBox;
 
 public class FileTreeItem extends JFXCheckBox {
 	
@@ -17,13 +13,23 @@ public class FileTreeItem extends JFXCheckBox {
 	private boolean isDirectory;
 	
 	public FileTreeItem() {
-		super ("Hidden Root");
+		super ("");
 	}
 	
-	public FileTreeItem(Path path) {
-		setPath(path);
+	public FileTreeItem(Path path, boolean isDirectory) {
+		this.path = path;
+		this.isDirectory = isDirectory;
+		setPath();
+		setIcon();
 		icon.setGlyphSize(20);
 		setGraphic(icon);
+	}
+	
+	private void setPath() {
+		if(path.getFileName() != null)
+			setText(path.getFileName().toString());
+		else
+			setText(path.toString());
 	}
 	
 	private void setIcon() {
@@ -35,19 +41,6 @@ public class FileTreeItem extends JFXCheckBox {
 	
 	public Path getPath() {
 		return path;
-	}
-	
-	public void setPath(Path path) {
-		this.path = path;
-		isDirectory = this.path.toFile().isDirectory();
-		if(path.getFileName() != null) {
-			setIcon();
-			setText(path.getFileName().toString());
-		}
-		else {
-			setText(path.toString());
-			icon.setText("");
-		}
 	}
 	
 	public boolean isDirectory() {
