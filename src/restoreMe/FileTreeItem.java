@@ -21,7 +21,7 @@ public class FileTreeItem extends JFXCheckBox {
 		this.isDirectory = isDirectory;
 		setPath();
 		setIcon();
-		icon.setGlyphSize(20);
+		icon.setStyleClass("file-or-folder");
 		setGraphic(icon);
 	}
 	

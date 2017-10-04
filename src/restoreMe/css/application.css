@@ -47,10 +47,15 @@
 	-fx-background-color: #555555;
 }
 
-.tree-cell > .tree-disclosure-node > .arrow  {
-    -fx-background-color: #dddddd;
+.tree-cell .file-or-folder {
+	-fx-fill: #e07e3e;
+	-glyph-size: 20pt;
 }
 
+.tree-cell > .tree-disclosure-node > .arrow  {
+    -fx-background-color: #dddddd;
+    -fx-font-size: 15pt;
+}
 
 .tree-cell:expanded > .tree-disclosure-node > .arrow {
     -fx-background-color: #e07e3e;
@@ -58,7 +63,6 @@
 
 .tree-cell:selected {
 	-fx-background-color: #444444;
-	
 }
 
 .jfx-check-box{
