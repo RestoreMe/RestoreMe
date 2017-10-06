@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXTreeView;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,24 +16,25 @@ import javafx.scene.layout.BorderPane;
 
 public class SidebarController implements Initializable{
 	
-	@FXML
-    private JFXButton profileTab;
+	//@FXML
+ //   private JFXButton profileTab;
+	
+	@FXML	
+	private JFXTreeView sidebarTreeView;
+  //  @FXML
+   // private JFXButton backupTab;
 
-    @FXML
-    private JFXButton backupTab;
+   // @FXML
+    //private JFXButton restoreTab;
 
-    @FXML
-    private JFXButton restoreTab;
+    //private JFXButton filesDestinationsTab;
 
-    @FXML
-    private JFXButton filesDestinationsTab;
+   // @FXML
+   //private JFXButton historyTab;
 
-    @FXML
-    private JFXButton historyTab;
-
-    @FXML
-    private JFXButton settingsTab;
-    
+    //@FXML
+   // private JFXButton settingsTab;
+   // 
     @FXML
     void windowSwitch(ActionEvent event) {
     	JFXButton btn = (JFXButton) event.getSource();
@@ -68,7 +70,7 @@ public class SidebarController implements Initializable{
 		settingsPane = (AnchorPane)((BorderPane)FXMLLoader.load(getClass().getResource(fxmlFolder + "Settings.fxml"))).getCenter();
 	}
 	
-	public void selectButton(String button) {
+/*	public void selectButton(String button) {
 		if(!button.equals("Profile"))
 			profileTab.setId("");
 		else
@@ -98,7 +100,7 @@ public class SidebarController implements Initializable{
 			settingsTab.setId("");
 		else
 			settingsTab.setId(buttonSelectionId);
-	}
+	}*/
 	
 	//Returns the Button Id in segments
 	public String getBtnId(JFXButton btn, boolean isName) {
@@ -123,6 +125,7 @@ public class SidebarController implements Initializable{
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		selectButton("Backup");
+		TreeItem profileLabel = new TreeItem
 	}
 	
 }

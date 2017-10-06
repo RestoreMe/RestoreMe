@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import com.jfoenix.controls.JFXTreeView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -43,85 +42,7 @@
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#333333" height="5.0" layoutX="-16.0" stroke="TRANSPARENT" strokeType="INSIDE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                      </children>
                   </AnchorPane>
-                  <VBox alignment="CENTER">
-                     <children>
-                        <AnchorPane prefHeight="80.0" prefWidth="255.0">
-                           <children>
-                              <JFXButton fx:id="profileTab" accessibleText="Profile" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#444444" style="-fx-background-radius: 0;" text="Profile" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font>
-                                 <graphic>
-                                    <MaterialDesignIconView fill="#e07e3e" glyphName="ACCOUNT" size="45" />
-                                 </graphic>
-                              </JFXButton>
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane prefHeight="80.0" prefWidth="186.0">
-                           <children>
-                              <JFXButton fx:id="backupTab" accessibleText="Backup" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#444444" style="-fx-background-radius: 0;" text="Backup" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font>
-                                 <graphic>
-                                    <MaterialDesignIconView fill="#e07e3e" glyphName="UPLOAD" size="45" />
-                                 </graphic>
-                              </JFXButton>
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane prefHeight="80.0" prefWidth="186.0">
-                           <children>
-                              <JFXButton fx:id="restoreTab" accessibleText="Restore" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#444444" style="-fx-background-radius: 0;" text="Restore" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font>
-                                 <graphic>
-                                    <MaterialDesignIconView fill="#e07e3e" glyphName="DOWNLOAD" size="45" />
-                                 </graphic>
-                              </JFXButton>
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane prefHeight="80.0" prefWidth="186.0">
-                           <children>
-                              <JFXButton fx:id="filesDestinationsTab" accessibleText="Files and Destinations" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#444444" style="-fx-background-radius: 0;" text="Files/Destinations" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font>
-                                 <graphic>
-                                    <MaterialDesignIconView fill="#e07e3e" glyphName="FOLDER_PLUS" size="45" />
-                                 </graphic>
-                              </JFXButton>
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane prefHeight="80.0" prefWidth="186.0">
-                           <children>
-                              <JFXButton fx:id="historyTab" accessibleText="History" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#444444" style="-fx-background-radius: 0;" text="History" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font>
-                                 <graphic>
-                                    <MaterialDesignIconView fill="#e07e3e" glyphName="HISTORY" size="45" />
-                                 </graphic>
-                              </JFXButton>
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane prefHeight="80.0" prefWidth="186.0">
-                           <children>
-                              <JFXButton fx:id="settingsTab" accessibleText="Settings" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="73.0" layoutY="51.0" onAction="#windowSwitch" prefHeight="58.0" prefWidth="186.0" ripplerFill="#444444" style="-fx-background-radius: 0;" text="Settings" textFill="#dddddd" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font>
-                                 <graphic>
-                                    <MaterialDesignIconView fill="#e07e3e" glyphName="SETTINGS" size="45" />
-                                 </graphic>
-                              </JFXButton>
-                           </children>
-                        </AnchorPane>
-                     </children>
-                     <VBox.margin>
-                        <Insets />
-                     </VBox.margin>
-                  </VBox>
+                  <JFXTreeView fx:id="sidebarTreeView" prefHeight="642.0" prefWidth="270.0" />
                </children>
             </VBox>
             <AnchorPane prefWidth="5.0" style="-fx-background-color: #454545;">
