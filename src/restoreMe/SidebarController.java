@@ -11,6 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TreeItem;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 
@@ -20,7 +21,7 @@ public class SidebarController implements Initializable{
  //   private JFXButton profileTab;
 	
 	@FXML	
-	private JFXTreeView sidebarTreeView;
+	private JFXTreeView<String> sidebarTreeView;
   //  @FXML
    // private JFXButton backupTab;
 
@@ -39,7 +40,7 @@ public class SidebarController implements Initializable{
     void windowSwitch(ActionEvent event) {
     	JFXButton btn = (JFXButton) event.getSource();
     	BorderPane root = (BorderPane) btn.getScene().getRoot();
-    	selectButton(btn.getAccessibleText());
+    	//selectButton(btn.getAccessibleText());
 	    switch(btn.getAccessibleText()) {
 	    	case "Profile": root.setCenter(profilePane); break;
 	    	case "Backup": root.setCenter(backupPane); break;
@@ -68,8 +69,27 @@ public class SidebarController implements Initializable{
 		filesDestinationsPane = (AnchorPane)((BorderPane)FXMLLoader.load(getClass().getResource(fxmlFolder + "FilesDestinations.fxml"))).getCenter();
 		historyPane = (AnchorPane)((BorderPane)FXMLLoader.load(getClass().getResource(fxmlFolder + "History.fxml"))).getCenter();
 		settingsPane = (AnchorPane)((BorderPane)FXMLLoader.load(getClass().getResource(fxmlFolder + "Settings.fxml"))).getCenter();
-	}
 	
+		
+		
+		
+		
+		
+
+		 TreeItem<String> root = new TreeItem<String>("Sobacon");
+		 root.setExpanded(true);
+		 root.getChildren().addAll(
+				 new TreeItem<String>("Profile"),
+				 new TreeItem<String>("Backup"),
+				 new TreeItem<String>("Restore"),
+				 new TreeItem<String>("Files/Destinations"),
+			     new TreeItem<String>("History"),
+			     new TreeItem<String>("Settings")
+			); 
+			sidebarTreeView = new JFXTreeView<String>(root);
+			//sidebarTreeView.setShowRoot(false);
+			sidebarTreeView.setVisible(true);
+	}
 /*	public void selectButton(String button) {
 		if(!button.equals("Profile"))
 			profileTab.setId("");
@@ -124,8 +144,8 @@ public class SidebarController implements Initializable{
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		selectButton("Backup");
-		TreeItem profileLabel = new TreeItem
+		//selectButton("Backup");
+
 	}
 	
 }
