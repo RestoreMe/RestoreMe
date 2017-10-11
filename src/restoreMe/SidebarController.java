@@ -76,7 +76,7 @@ public class SidebarController implements Initializable{
 		
 		
 
-		 TreeItem<String> root = new TreeItem<String>("Sobacon");
+		 TreeItem<String> root = new TreeItem<String>("	");
 		 root.setExpanded(true);
 		 root.getChildren().addAll(
 				 new TreeItem<String>("Profile"),
@@ -87,7 +87,7 @@ public class SidebarController implements Initializable{
 			     new TreeItem<String>("Settings")
 			); 
 			sidebarTreeView = new JFXTreeView<String>(root);
-			//sidebarTreeView.setShowRoot(false);
+			sidebarTreeView.setShowRoot(false);
 			sidebarTreeView.setVisible(true);
 	}
 /*	public void selectButton(String button) {
