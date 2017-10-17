@@ -76,19 +76,6 @@ public class SidebarController implements Initializable{
 		
 		
 
-		 TreeItem<String> root = new TreeItem<String>("	");
-		 root.setExpanded(true);
-		 root.getChildren().addAll(
-				 new TreeItem<String>("Profile"),
-				 new TreeItem<String>("Backup"),
-				 new TreeItem<String>("Restore"),
-				 new TreeItem<String>("Files/Destinations"),
-			     new TreeItem<String>("History"),
-			     new TreeItem<String>("Settings")
-			); 
-			sidebarTreeView = new JFXTreeView<String>(root);
-			sidebarTreeView.setShowRoot(false);
-			sidebarTreeView.setVisible(true);
 	}
 /*	public void selectButton(String button) {
 		if(!button.equals("Profile"))
@@ -146,6 +133,20 @@ public class SidebarController implements Initializable{
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		//selectButton("Backup");
 
+		 TreeItem<String> root = new TreeItem<String>("	");
+		 root.setExpanded(true);
+		 root.getChildren().addAll(
+				 new TreeItem<String>("Profile"),
+				 new TreeItem<String>("Backup"),
+				 new TreeItem<String>("Restore"),
+				 new TreeItem<String>("Files/Destinations"),
+			     new TreeItem<String>("History"),
+			     new TreeItem<String>("Settings")
+			); 
+		
+		sidebarTreeView.setShowRoot(false);
+		sidebarTreeView.setVisible(true);
+		sidebarTreeView.setRoot(root);
 	}
 	
 }
