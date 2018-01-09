@@ -1,0 +1,2 @@
+Most of the SVGs here (with the exception of Logo.svg) are made by Google and are under the Apache License 2.0.
+Logo.svg is custom made, but it uses one of the Google SVGs. So some terms of the Apache License 2.0 probably apply.

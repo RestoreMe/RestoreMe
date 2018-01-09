@@ -1,0 +1,22 @@
+Features
+	-select which files to backup
+	-choose a destination
+		-custom selection GUI
+		-local folder
+		-backup to a network location
+		-backup to another computer
+	-data deduplication
+	-compression
+	-encryption
+	-multithreading
+	-muliplatform
+	-create account
+	-java
+	-GUI
+
+First nine weeks
+	-select which files to backup (custom selection GUI)
+	-local folder backups
+	-limited multihreading
+	-attempt for multiplatform capability
+	-basic GUI
