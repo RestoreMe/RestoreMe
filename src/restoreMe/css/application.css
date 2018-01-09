@@ -1,0 +1,91 @@
+#selected {
+	-fx-background-color: #444444;
+}
+
+.jfx-tab-pane .tab-header-area .jfx-rippler{
+    -jfx-rippler-fill: #e07e3e;
+}
+
+.jfx-tab-pane .tab-selected-line {
+    -fx-background-color: #e07e3e;
+}
+
+.jfx-tab-pane .tab-header-background
+{
+	-fx-background-color: #444444;
+}
+
+.jfx-tab-pane .text-color{
+	-fx-fill: RED;
+}
+
+.jfx-tab-pane .tab:selected {
+	 -fx-background-color: #555555;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #dddddd;
+    -fx-font-size: 25px;
+    -fx-font-weight: normal;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #e07e3e;
+}
+
+.tree-view {
+	-fx-background-color: #555555;
+}
+
+.tree-view .jfx-rippler {
+	-jfx-rippler-fill: #e07e3e;
+}
+
+.tree-cell {
+	-fx-background-color: #555555;
+}
+
+.tree-cell .file-or-folder {
+	-fx-fill: #e07e3e;
+	-glyph-size: 20pt;
+}
+
+.tree-cell > .tree-disclosure-node > .arrow  {
+    -fx-background-color: #dddddd;
+    -fx-font-size: 15pt;
+}
+
+.tree-cell:expanded > .tree-disclosure-node > .arrow {
+    -fx-background-color: #e07e3e;
+}
+
+.tree-cell:selected {
+	-fx-background-color: #444444;
+}
+
+.jfx-check-box{
+	-fx-text-fill: #dddddd;
+	-fx-font-size: 10pt;
+    -jfx-checked-color: #e07e3e;
+    -jfx-unchecked-color: #dddddd;
+}
+
+.scroll-bar .track,
+.scroll-bar .track-background,
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button{
+	-fx-background-color: #555555;
+}
+
+.scroll-bar .increment-arrow, 
+.scroll-bar .decrement-arrow {
+    -fx-padding: 0;	
+}
+
+.scroll-bar .thumb {
+	-fx-background-color: #e07e3e;
+	-fx-background-radius: 1px;
+	-fx-padding: 2px;
+}
