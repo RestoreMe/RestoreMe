@@ -21,7 +21,7 @@ public class DirectoryTree {
 	private ArrayList<Path> roots;
 	private ArrayList<Path> openPaths;
 	private JFXTreeView<FileTreeItem> tree;
-	private TreeItem<FileTreeItem> treeRoot = new TreeItem<FileTreeItem>();
+	private TreeItem<FileTreeItem> treeRoot = new TreeItem<>();
 	
 	private ChangeListener<Boolean> treeItem;
 	

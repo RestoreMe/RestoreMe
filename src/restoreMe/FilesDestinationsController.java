@@ -17,8 +17,8 @@ public class FilesDestinationsController implements Initializable {
 	@FXML
 	JFXTreeView<FileTreeItem> backupFilesTreeView;
 	
-	private ArrayList<Path> roots = new ArrayList<Path>();
-	private ArrayList<Path> openPaths = new ArrayList<Path>();
+	private ArrayList<Path> roots = new ArrayList<>();
+	private ArrayList<Path> openPaths = new ArrayList<>();
 	
 	public FilesDestinationsController() {
 		Path osRoot = Paths.get(System.getProperty("user.home")).getRoot();
