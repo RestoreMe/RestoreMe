@@ -47,6 +47,10 @@
 	-fx-background-color: #555555;
 }
 
+.tree-cell .selection-bar {
+	-fx-background-color: #e07e3e;
+}
+
 .tree-cell .file-or-folder {
 	-fx-fill: #e07e3e;
 	-glyph-size: 20pt;
