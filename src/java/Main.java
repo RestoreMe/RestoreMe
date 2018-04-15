@@ -1,5 +1,3 @@
-package restoreMe;
-	
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -11,14 +9,14 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			BorderPane root = FXMLLoader.load(getClass().getResource("/restoreMe/fxml/Sidebar.fxml"));
-			BorderPane defaultScreen = FXMLLoader.load(getClass().getResource("/restoreMe/fxml/Backup.fxml"));
+			BorderPane root = FXMLLoader.load(getClass().getResource("fxml/Sidebar.fxml"));
+			BorderPane defaultScreen = FXMLLoader.load(getClass().getResource("fxml/Backup.fxml"));
 			root.setCenter(defaultScreen);
 			Scene scene = new Scene(root,1200,750);
-			scene.getStylesheets().add(getClass().getResource("/restoreMe/css/application.css").toExternalForm());
+			scene.getStylesheets().add(getClass().getResource("css/application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("RestoreMe!");
-			primaryStage.getIcons().add(new Image(this.getClass().getClassLoader().getResourceAsStream("restoreMe/img/Logo.png")));
+			primaryStage.getIcons().add(new Image(this.getClass().getClassLoader().getResourceAsStream("img/Logo.png")));
 			primaryStage.setMinWidth(900);
 			primaryStage.setMinHeight(475);
 			primaryStage.show();
