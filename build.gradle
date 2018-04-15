@@ -18,6 +18,12 @@ sourceSets {
     }
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'Main'
+    }
+}
+
 dependencies {
     implementation 'de.jensd:fontawesomefx-materialdesignfont:1.7.22-4'
     implementation 'com.github.jfoenixadmin:jfoenix:master'
