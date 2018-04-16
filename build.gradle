@@ -1,14 +1,18 @@
+//Group and version
 group 'restoreMe'
 version '0.1.0'
-apply plugin: 'java'
 
+//Use Java
+apply plugin: 'java'
 sourceCompatibility = 1.8
 
+//Repositories for maven alternative and tool for getting from Git Repos
 repositories {
     jcenter()
     maven { url "https://jitpack.io" }
 }
 
+//Set Sources and Resources
 sourceSets {
     main {
         java {
@@ -20,13 +24,14 @@ sourceSets {
     }
 }
 
+//Set manifest
 jar {
     manifest {
-        attributes 'Main-Class': 'Main'
+        attributes 'Main-Class': 'Main' //Main class for making the JAR executable
     }
 }
 
 dependencies {
-    implementation 'de.jensd:fontawesomefx-materialdesignfont:1.7.22-4'
-    implementation 'com.github.jfoenixadmin:jfoenix:master'
+    implementation 'de.jensd:fontawesomefx-materialdesignfont:1.7.22-4' //FontawesomeFX libraries
+    implementation 'com.github.jfoenixadmin:jfoenix:master' //JFoenix library
 }
