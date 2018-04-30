@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Soham3-1415/RestoreMe.svg?branch=master)](https://travis-ci.org/RestoreMe/RestoreMe)
+[![Build Status](https://travis-ci.org/RestoreMe/RestoreMe.svg?branch=master)](https://travis-ci.org/RestoreMe/RestoreMe)
 
 # RestoreMe
 This is a Java based file backup utility.<br>
