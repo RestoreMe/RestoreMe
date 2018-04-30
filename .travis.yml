@@ -1,0 +1,13 @@
+language: java
+matrix:
+  include:
+    - os: linux
+      sudo: false
+      jdk: oraclejdk8
+      
+before_install:
+  - chmod +x gradlew
+
+script:
+  - ./gradlew clean install
+  - ./gradlew check
